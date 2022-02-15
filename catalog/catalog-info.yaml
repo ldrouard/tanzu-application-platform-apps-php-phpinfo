@@ -7,6 +7,10 @@ metadata:
     - php
     - web
     - tanzu
+  links:
+    - url: https://drouard.eu
+      title: drouard.eu
+      icon: personpin
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=php-phpinfo'
 
