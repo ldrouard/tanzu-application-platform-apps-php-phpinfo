@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: php-phpinfo
+  description: Sample apps with PHPinfo ;)
+  tags:
+    - php
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=php-phpinfo'
+
+spec:
+  type: website
+  lifecycle: experimental
+  owner: orange-team
