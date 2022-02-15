@@ -7,6 +7,7 @@ metadata:
     - php
     - web
     - tanzu
+  system: default
   links:
     # Icons from
     - url: https://cloud.orange-business.com/
