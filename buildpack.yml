@@ -1,0 +1,46 @@
+---
+### Pack's configuration
+
+# HTTPD Buildpack : https://docs.pivotal.io/tanzu-buildpacks/httpd/httpd-buildpack.html
+#                   https://github.com/paketo-buildpacks/httpd
+httpd:
+  # This allows you to specify a version constraint for the httpd dependency
+  # any valid semver constaints (e.g. 2.* and 2.4.*) are also acceptable
+  version: 2.4.*
+
+# Nginx Buildpack : https://docs.pivotal.io/tanzu-buildpacks/nginx/nginx-buildpack.html
+#                   https://github.com/paketo-buildpacks/nginx
+nginx:
+  # This allows you to specify a version constaint for the `NGINX` dependency
+  # any valid semver constaints (e.g. 1.* and 1.17.*) are also acceptable
+  #
+  # you can also specify "mainline" or "stable"
+  version: stable
+
+# PHP Buildpack : https://docs.pivotal.io/tanzu-buildpacks/php/php-buildpack.html
+#                 https://github.com/paketo-buildpacks/php-web
+php:
+  ## This allows you to specify a version constraint for the `php` dependency
+  # any valid semver constaints (e.g. 7.*) are also acceptable
+  # Wordpress 7.x requirements :
+  #   * PHP >= 7.4.*
+  version: 8.*
+
+  ## Text user can specify to use PHP's built-in Web Server
+  # options are: php-server, httpd, nginx. default: php-server
+  webserver: nginx
+
+  ## Directory where web app code is stored
+  # default: htdocs
+  webdirectory: src
+
+  ## Directory where library code is stored
+  # default: lib
+  libdirectory: lib
+
+  # Cli script to use with php Builtin Web Server
+  # no default
+  script:
+
+  ## default: admin@localhost
+  serveradmin: paas@localhost

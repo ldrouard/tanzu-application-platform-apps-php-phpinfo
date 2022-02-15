@@ -1,2 +1,2 @@
 # tap-apps-phphinfo
-Tanzu Application Platoform - Tests Apps with PHPinfo
+Tanzu Application Platform - Tests Apps with PHPinfo
