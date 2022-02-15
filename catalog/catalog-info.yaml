@@ -8,9 +8,13 @@ metadata:
     - web
     - tanzu
   links:
+    # Icons from
+    - url: https://cloud.orange-business.com/
+      title: Orange Cloud for Business
+      icon: cloud
     - url: https://drouard.eu
-      title: drouard.eu
-      icon: personpin
+      title: Personal Website
+      icon: home
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=php-phpinfo'
 
