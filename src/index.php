@@ -1,4 +1,5 @@
 <?php
+  echo "Hello world!<br>";
   phpinfo(INFO_GENERAL);
   phpinfo(INFO_CONFIGURATION);
   phpinfo(INFO_MODULES);
